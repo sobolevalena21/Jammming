@@ -4,6 +4,7 @@ import SearchBar from '../SearchBar/SearchBar.js';
 import SearchResults from '../SearchResults/SearchResults.js';
 import Playlist from '../Playlist/Playlist.js';
 import Spotify from '../util/Spotify.js';
+import PlaylistList from '../PlaylistList/PlaylistList.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -59,6 +60,7 @@ search(term) {
   })
 }
 
+
   render() {
     return (
       <div>
@@ -72,6 +74,7 @@ search(term) {
                       onRemove={this.removeTrack}
                       onNameChange={this.updatePlaylistName}
                       onSave={this.savePlaylist} />
+          <PlaylistList/>
           </div>
         </div>
       </div>
