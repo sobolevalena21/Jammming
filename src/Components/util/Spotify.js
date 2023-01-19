@@ -119,7 +119,7 @@ const Spotify = {
                console.log(jsonResponse.id); 
    
       // Make a call to the /users/{user_id}/playlists endpoint.Upon completion of this request, we will update the current playlist's state to an array of the returned playlists. Rather than storing the entire playlists, we should create and store objects for each playlist that contain the playlistId and name of each playlist (below using the map method)
-        const proxyurl = "https://cors-anywhere.herokuapp.com/"; 
+        const proxyurl = "https://corsanywhere.herokuapp.com/"; 
         const url = `https://api.spotify.com/v1/users/${currentUserId}/playlists`; 
       return fetch((proxyurl + url), {
         headers: headers
